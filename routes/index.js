@@ -13,11 +13,10 @@ router.get('/', function(req, res, next) {
 router.route('/testsql')
     .get(function(req, res, next) {
 
-        connection();
-        // connection.query("SELECT * FROM LpsyncPermission", function (err, result, fields) {
-        //     if (err) throw err;
-        //     console.log(result);
-        // });
+        connection.query("SELECT * FROM LpsyncPermission", function (err, result, fields) {
+            if (err) throw err;
+            console.log(result);
+        });
 
     });
 
