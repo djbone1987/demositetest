@@ -9,7 +9,7 @@ user: "svc_lpsync",
  }
 
  //if (process.env.INSTANCE_CONNECTION_NAME && process.env.NODE_ENV === 'production') {
-  config.socketPath = `/cloudsql/lpsync-db`;
+  config.socketPath = `/cloudsql/lpsync:us-central1:lpsync-db`;
 // }
 
  let connection = mysql.createConnection(config);
