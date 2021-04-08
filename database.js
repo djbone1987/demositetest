@@ -16,7 +16,7 @@ const createUnixSocketPool = async config => {
     });
 };
 
-createUnixSocketPool();
+
 
 // let config = {
 // user: "svc_lpsync",
@@ -47,4 +47,4 @@ createUnixSocketPool();
 //     console.log('Connected as thread id: ' + connection.threadId);
 // });
 
-module.exports = connection;
+module.exports = createUnixSocketPool;
